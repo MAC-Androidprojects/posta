@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Lemonada:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>posta</title>
+  </head>
+  <body>
+    <%-include('_navBarHome.ejs')%>
+    <div style="text-align: center; margin-top: 5%">
+      <h1>Welcome <%=email%></h1>
+      <div style="margin-top: 2%">
+        <a href="/receive-messages"
+          ><button class="btn btn-secondary">Receive messages</button></a
+        >
+        <a href="/send-message"
+          ><button class="btn btn-primary">Send a message</button></a
+        >
+      </div>
+      <div style="margin-top: 1%">
+        <a href="/changeID">
+          <button class="btn btn-primary" style="background-color: red">
+            Change my ID
+          </button>
+        </a>
+      </div>
+      <p style="margin-top: 1%">
+        It's advised to change your ID before receiving messages to know more<br />
+        <a>Change my ID</a>
+      </p>
+    </div>
+  </body>
+</html>

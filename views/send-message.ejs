@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Lemonada:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>posta</title>
+  </head>
+  <body>
+    <%-include('_navBar.ejs')%>
+    <div class="container">
+      <h1>Enter user ID</h1>
+      <form action="/send-message" method="POST" style="margin-top: 1%">
+        <div class="formCont">
+          <input type="number" id="id" name="id" style="width: 40%" required />
+        </div>
+        <div style="margin-top: 1%">
+          <button class="btn btn-primary" type="submit">Find</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

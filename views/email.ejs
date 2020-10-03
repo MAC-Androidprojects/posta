@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>posta</title>
+  </head>
+  <body>
+    <%-include('_navBar.ejs')%>
+    <div class="cont">
+        <h1>Email</h1>
+        <form action="/messages" method="POST">
+            <div class="formCont">
+                <input type="email" id="email" name="email" style="width: 40%;" required>
+            </div>
+            <div style="margin-top: 2%;">
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+
+        </form>
+  </body>
+</html>
